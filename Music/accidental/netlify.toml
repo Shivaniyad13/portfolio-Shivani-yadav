@@ -1,0 +1,22 @@
+[build]
+  base = "accidental"
+  command = "python manage.py collectstatic --noinput && python manage.py migrate"
+  publish = "staticfiles"
+
+[build.environment]
+  PYTHON_VERSION = "3.14"
+  DJANGO_SETTINGS_MODULE = "accidental_fighter.settings"
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://127.0.0.1:8000/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[dev]
+  command = "python manage.py runserver"
+  port = 8000
