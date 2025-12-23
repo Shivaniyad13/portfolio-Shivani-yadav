@@ -1,0 +1,148 @@
+/* -----------------------------------
+   EDUCATION SECTION STYLING
+   For Shivani Yadav’s Portfolio
+----------------------------------- */
+
+#education {
+  padding: 100px 0;
+  background: linear-gradient(to bottom right, #f8fafc, #f1f5f9);
+  animation: fadeInUp 1.2s ease-out;
+  scroll-margin-top: 80px;
+}
+
+/* Section Title */
+#education h2 {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  background: linear-gradient(90deg, #2563eb, #0ea5e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3rem;
+}
+
+#education h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -6px;
+  width: 10%;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  border-radius: 4px;
+}
+
+/* 2-Column Grid Layout (like contact section) */
+.education-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Education Cards */
+.education-card {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.education-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-color: #93c5fd;
+}
+
+.education-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(59, 130, 246, 0.08), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.education-card:hover::before {
+  opacity: 1;
+}
+
+.education-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Icon Circle */
+.icon-circle {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Text Styles */
+.education-card h3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.education-card p {
+  color: #475569;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.education-card .info-box {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(to right, #eff6ff, #f0fdf4);
+  color: #334155;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #education {
+    padding: 60px 0;
+  }
+
+  .education-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .education-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

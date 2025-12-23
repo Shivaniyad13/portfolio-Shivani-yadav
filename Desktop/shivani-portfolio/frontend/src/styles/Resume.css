@@ -1,0 +1,114 @@
+.resume-section {
+    padding: 80px 20px;
+    background-color: #f8fafc;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #0f172a;
+}
+
+.resume-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.resume-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #020617;
+}
+
+.resume-badge {
+    background: #dcfce7;
+    color: #166534;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.resume-name,
+.resume-role {
+    font-size: 15px;
+    color: #334155;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.resume-description {
+    font-size: 15px;
+    color: #475569;
+    margin: 16px 0 24px;
+    line-height: 1.6;
+}
+
+.resume-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-btn {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.view-btn:hover {
+    background: #bae6fd;
+}
+
+.download-btn {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.download-btn:hover {
+    background: #1d4ed8;
+}
+
+.btn-icon {
+    font-size: 14px;
+}
+
+.icon {
+    font-size: 14px;
+}
